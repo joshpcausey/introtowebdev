@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div>
+                <label for="FirstName" id="FirstNameLabel">Full Name: </label>
+                <input type="text" name="FirstName" id="FirstName" />
+            </div>
+            <div>
+                <label for="LastName" id="LastNameLabel">Last Name: </label>
+                <input type="text" name="LastName" id="LastName" />
+            </div>
+            <div>
+                <label for="Email" id="EmailLabel">Email Address: </label>
+                <input type="text" name="Email" id="Email" />
+            </div>
+            <div>
+                <label for="License" id="LicenseLabel">Type of License: </label>
+                <input type="radio" name="License" id="BusinessLicense">
+                <label for="BusinessLicense">Business</label>
+                <input type="radio" name="License" id="PersonalLicense">
+                <label for="PersonalLicense">Personal</label>
+            </div>
+            <div>
+                <label for="Reason" id="ReasonLabel">Reason: </label>
+                <select name="Reason">
+                    <option value="SelectAReason">Select a Reason</option>
+                    <option value="SoftwareSupport">Software Support</option>
+                    <option value="HardwareSupport">Hardware Support</option>
+                    <option value="InformationRequest">Information Request</option>
+                </select>
+            </div>
+            <!--<div>
+                <label for="Message" id="MessageLabel">Message: </label>
+                <textarea name="Message" id="Message"></textarea>
+            </div> -->
+            <div>
+                <lable for="AdditionalInformation" id="AdditionalInformationLabel">Additional Information: </lable>
+                <textarea name="AdditionalInformation" id="AdditionalInformation"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="AgreeToTerms" value="AgreeToTerms">
+                <label for="AgreeToTerms">I have read the terms of service</label>
+            </div>
+            <div>
+                <button type="submit">Send Request</button>
+            </div>
+        </form>
+    </body>
+</html>
