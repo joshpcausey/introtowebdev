@@ -1,0 +1,49 @@
+#albumArt {
+    background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/0c/c0/dd/0cc0ddf7-9eca-5562-2372-f129e1be5d81/Bittersweet.jpg/600x600bf.jpg");
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.monoFont {
+    font-family: monospace;
+}
+
+.italicFont {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+a:link {
+
+}
+  
+a:visited {
+
+}
+  
+a:hover {
+    text-decoration: underline;
+    background-color: green;
+}
+  
+a:active {
+
+}
+
+td {
+    font-style: italic;
+    background-color: rgba(209, 211, 86, 0.61)
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.158);
+}
