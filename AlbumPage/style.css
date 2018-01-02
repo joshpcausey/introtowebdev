@@ -20,30 +20,16 @@
 
 a {
     text-decoration: none;
-  }
-  
-a:link {
-
-}
-  
-a:visited {
-
-}
-  
+} 
 a:hover {
     text-decoration: underline;
     background-color: green;
 }
+
+tbody tr:nth-child(even) {
+    background-color: LemonChiffon;
+}
   
-a:active {
-
-}
-
-td {
-    font-style: italic;
-    background-color: rgba(209, 211, 86, 0.61)
-}
-
-th{
-    background-color: rgba(0, 0, 0, 0.158);
+tbody tr:nth-child(odd) {
+    background-color: rgba(171, 204, 50, 0.74);
 }
