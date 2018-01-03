@@ -3,72 +3,78 @@
     <head>
         <title>Lucky's Pizza</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container-fluid">
-            <div id="header">
-                <h1>Lucky's Pizza</h1>
-                <hr>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact Us</a>
-                <hr>
+            <div class="row">
+                <div class="col-md-12" id="header">
+                    <h1>Lucky's Pizza</h1>
+                    <hr>
+                    <ul class="nav nav-tabs">
+                        <li role="presentation"><a href="index.html">Home</a></li>
+                        <li role="presentation"><a href="menu.html">Menu</a></li>
+                        <li role="presentation" class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <hr>
+                </div>
             </div>
             <form action="#" method="post">
-                    <div>
-                        <label style="font-weight:bold;" for="Name" id="NameLabel">Name: </label>
-                        <input type="text" name="Name" id="Name" />
-                    </div>
-                    <div>
-                        <label style="font-weight:bold;" for="Email" id="EmailLabel">Email: </label>
-                        <input type="text" name="Email" id="Email" />
-                    </div>
-                    <div>
-                        <lable style="font-weight:bold;" for="Phone" id="PhoneLabel">Phone: </lable>
-                        <input type="text" name="Phone" id="Phone" />
-                    </div>
-                    <div>
-                        <label style="font-weight:bold;" for="Reason" id="ReasonLabel">Reason for Inquiry: </label>
-                        <select name="Reason">
-                            <option value="Catering">Catering</option>
-                            <option value="PrivateParty">Private Party</option>
-                            <option value="Feedback">Feedack</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label style="font-weight:bold;" for="AdditionalInformation" id="AdditionalInformationLabel">Additional Information: </label>
-                        <textarea name="AdditionalInformation" id="AdditionalInformation"></textarea>
-                    </div>
-                    <div>
-                        <label style="font-weight:bold;" for="Visited" id="VisitedLabel">Have you been to the restaurant? </label>
-                        <input type="radio" name="Visited" id="VisitedNo">
-                        <label for="VisitedNo">No</label>
-                        <input type="radio" name="Visited" id="VisitedYes">
-                        <label for="VisitedYes">Yes</label>
-                    </div>
-                    <div>
-                        <label style="font-weight:bold;" for="Days" id="DaysLabel">Best days to contact you: </label>
-                        <input type="checkbox" name="Days" id="Monday">
-                        <label for="Monday">M</label>
-                        <input type="checkbox" name="Days" id="Tuesday">
-                        <label for="Tuesday">T</label>
-                        <input type="checkbox" name="Days" id="Wednsday">
-                        <label for="Wednsday">W</label>
-                        <input type="checkbox" name="Days" id="Thursday">
-                        <label for="Thursday">Th</label>
-                        <input type="checkbox" name="Days" id="Friday">
-                        <label for="Friday">F</label>
-                    </div>
-                    <div>
-                        <input type="submit" value="Submit Request" />
-                    </div>
-                </form>
-            <div id="footer" class="center-text">
-                <hr>
-                1538 Cornell Street, Paducah Kentucky, 42001<br>
-                270-867-5309
+                <div>
+                    <label style="font-weight:bold;" for="Name" id="NameLabel">Name: </label>
+                    <input type="text" name="Name" id="Name" />
+                </div>
+                <div>
+                    <label style="font-weight:bold;" for="Email" id="EmailLabel">Email: </label>
+                    <input type="text" name="Email" id="Email" />
+                </div>
+                <div>
+                    <lable style="font-weight:bold;" for="Phone" id="PhoneLabel">Phone: </lable>
+                    <input type="text" name="Phone" id="Phone" />
+                </div>
+                <div>
+                    <label style="font-weight:bold;" for="Reason" id="ReasonLabel">Reason for Inquiry: </label>
+                    <select name="Reason">
+                        <option value="Catering">Catering</option>
+                        <option value="PrivateParty">Private Party</option>
+                        <option value="Feedback">Feedack</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-weight:bold;" for="AdditionalInformation" id="AdditionalInformationLabel">Additional Information: </label>
+                    <textarea name="AdditionalInformation" id="AdditionalInformation"></textarea>
+                </div>
+                <div>
+                    <label style="font-weight:bold;" for="Visited" id="VisitedLabel">Have you been to the restaurant? </label>
+                    <input type="radio" name="Visited" id="VisitedNo">
+                    <label for="VisitedNo">No</label>
+                    <input type="radio" name="Visited" id="VisitedYes">
+                    <label for="VisitedYes">Yes</label>
+                </div>
+                <div>
+                    <label style="font-weight:bold;" for="Days" id="DaysLabel">Best days to contact you: </label>
+                    <input type="checkbox" name="Days" id="Monday">
+                    <label for="Monday">M</label>
+                    <input type="checkbox" name="Days" id="Tuesday">
+                    <label for="Tuesday">T</label>
+                    <input type="checkbox" name="Days" id="Wednsday">
+                    <label for="Wednsday">W</label>
+                    <input type="checkbox" name="Days" id="Thursday">
+                    <label for="Thursday">Th</label>
+                    <input type="checkbox" name="Days" id="Friday">
+                    <label for="Friday">F</label>
+                </div>
+                <div>
+                    <input type="submit" value="Submit Request" />
+                </div>
+            </form>
+            <div class="row">
+                <div id="footer" class="col-md-12 center-text">
+                    <hr>
+                    1538 Cornell Street, Paducah Kentucky, 42001<br>
+                    270-867-5309
+                </div>
             </div>
         </div>
     </body>

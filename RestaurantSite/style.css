@@ -7,8 +7,8 @@
     margin: auto;
 }
 
-#items {
-    background-color: red;
+.menuItems {
+
 }
 
 #RestaurantDesc {
@@ -21,7 +21,7 @@
 }
 
 #main {
-    background-color: red;
+    background-color: rgba(60, 129, 28, 0.226)
 }
 
 #header h1 {
