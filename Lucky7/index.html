@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucky 7</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div calss="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h1>Lucky Sevens</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <form>
+                        <label for="startingbet">Starting Bet: </label>
+                        <input name="startingbet" type="text" id="startingbet" /><br>
+                        <input type="button" value="Play Again" onclick="playGame()" />
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Results</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Starting Bet</th>
+                                <th>$</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Rolls Before Going Broke</td>
+                                <td>#</td>
+                            </tr>
+                            <tr>
+                                <td>Highest Ammount Won</td>
+                                <td>$###</td>
+                            </tr>
+                            <tr>
+                                <td>Roll Count at Highest Ammount Won</td>
+                                <td>$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
