@@ -2,7 +2,7 @@ function rollDice() {
     return Math.ceil(Math.random() * (1 + 6 - 1));
 }
 
-var money = Number;
+var money = 0;
 var moneyToStart = Number;
 var Dice1 = Number;
 var Dice2 = Number;
@@ -18,8 +18,8 @@ function playGame() {
         return false;
     }
     else {
-        money = document.getElementById("startingbet").value;
-        moneyToStart = document.getElementById("startingbet").value;
+        money = Number(document.getElementById("startingbet").value);
+        moneyToStart = Number(document.getElementById("startingbet").value);
         while(money > 0){
             Dice1 = rollDice();
             Dice2 = rollDice();
