@@ -42,4 +42,8 @@ function playGame() {
             }
         }
     }
+    document.getElementById("startingBetTable").innerHTML = "$" + moneyToStart;
+    document.getElementById("totalRolls").innerHTML = rollAmmount;
+    document.getElementById("highestAmmount").innerHTML = "$" + maxMoney;
+    document.getElementById("highestAmmountRoll").innerHTML = highestRollCount;
 }
