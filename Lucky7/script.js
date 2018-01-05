@@ -2,16 +2,14 @@ function rollDice() {
     return Math.ceil(Math.random() * (1 + 6 - 1));
 }
 
-var money = 0;
-var moneyToStart = Number;
-var Dice1 = Number;
-var Dice2 = Number;
-var rollAmmount = 0;
-var maxMoney = 0;
-var highestRollCount;
-
 function playGame() {
-    console.log(document.getElementById("startingbet").value);
+    var money = 0;
+    var moneyToStart = Number;
+    var Dice1 = Number;
+    var Dice2 = Number;
+    var rollAmmount = 0;
+    var maxMoney = 0;
+    var highestRollCount;
     if(isNaN(document.getElementById("startingbet").value) || document.getElementById("startingbet").value <= 0) {
         document.getElementById("startingbet").value = "";
         alert("Please pick a number greater than zero.");
@@ -26,7 +24,6 @@ function playGame() {
             rollAmmount += 1;
             if(Dice1 + Dice2 == 7){
                 money += 4;
-                console.log(money)
                 if(money > maxMoney){
                     maxMoney = money;
                     highestRollCount = rollAmmount;
@@ -34,7 +31,6 @@ function playGame() {
             }
             else{
                 money -= 1;
-                console.log(money)
                 if(money > maxMoney){
                     maxMoney = money;
                     highestRollCount = rollAmmount;
@@ -46,4 +42,5 @@ function playGame() {
     document.getElementById("totalRolls").innerHTML = rollAmmount;
     document.getElementById("highestAmmount").innerHTML = "$" + maxMoney;
     document.getElementById("highestAmmountRoll").innerHTML = highestRollCount;
+    document.getElementById("playButton").value = "Play Again";
 }
